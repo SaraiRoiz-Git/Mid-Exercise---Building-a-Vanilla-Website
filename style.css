@@ -37,11 +37,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#909090', end
     left: 0;
     top: 20px;
 }
-
 .serch-bar{
     display: flex;
 }
-
 .serch-bar>.serch{
     width: 135px;
     height: 19px;
@@ -65,10 +63,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#909090', end
 
 }
 
-.serch-bar button{
-    border: none;
-}
-
 .logo{
    position: absolute;
    right: -8px;
@@ -86,15 +80,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#909090', end
     align-items: flex-end;
 }
 
-.nav-element:last-child{
-    padding-left: 15px;
-    border-left: 0;
+.nav-element>img{
+    padding-left: 17px;
 }
 .nav-element>a{
     padding:0 17px;
     font-size: 15px;
     font-weight: bold;
-    border-left:2px solid rgba(255,255,255,0.5) ;
+    border-right:2px solid rgba(255,255,255,0.5) ;
     margin-bottom: 18px;
 }
 
@@ -203,13 +196,16 @@ background-color: rgb(247,185,29);
 }
 .add{
     border: 2px solid rgb(140,140,140,0.1);
-    border-bottom: none;
- 
-    background: linear-gradient(0deg, rgba(237,237,237,1) , rgba(255, 255, 255) 100%);
-    border-top-right-radius: 17px;
     width: 290px;
     height: 215px;
     margin-bottom: 72px;
+}
+
+.grad{
+    border: 2px solid rgb(140,140,140,0.1);
+    border-bottom: none;
+    background: linear-gradient(0deg, rgba(237,237,237,1) , rgba(255, 255, 255) 100%);
+    border-top-right-radius: 17px;
 }
 
 .add>h3 {
@@ -292,23 +288,127 @@ a:hover, dropdown-element:hover{
 }
 
 /***********************************************************************/
-
-.contact-us{
+.main{
     width: 900px;
     margin: auto;
-    color: #575757;
+}
+
+.all-contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .tab{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
     width: 120px;
-    height: 30px;
-    background: -moz-linear-gradient(top,  #fafafa 1%, #cccccc 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #fafafa 1%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #fafafa 1%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    height: 38px;
+    background: -moz-linear-gradient(top, #fafafa 1%, #cccccc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fafafa 1%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fafafa 1%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#cccccc',GradientType=0 ); /*
+    IE6-9 */
 }
 
-.material-icons-outlined{
-    font-family: 'Tangerine', serif;
-        font-size: 48px;
+.tab>a, .company-contact>a{
+    color: #575757;
+   
+}
+
+.page-location, .page-location>a{
+    color: #575757;
+    margin-bottom: 20px;
+}
+.contact-form{
+    width: 385px;
+}
+
+.main-title{
+    width: 440px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    color: #72716d;
+
+}
+.form-header{
+    padding: 12px 22px;
+}
+
+.title{
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.subtitle{
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+
+.input-elment>label{
+    color: #72716d;
+    font-size: 12px;
+}
+
+input{
+    width: 170px;
+}
+
+textarea{
+    font-size: 12px;
+    width: 245px;
+    height: 110px;
+}
+
+.send-form{
+    margin: auto;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.starred{
+    color: #72716d;
+    font-size: 12px;
+}
+.input-elment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:8px;
+    
+}
+
+.btn-submit{
+    align-self: flex-end;
+    text-align: center;
+    width:42px;
+    height: 19px;
+    background: #15a8ff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #15a8ff 0%, #04528a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #15a8ff 0%,#04528a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #15a8ff 0%,#04528a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15a8ff', endColorstr='#04528a',GradientType=0 ); /* IE6-9 */
+    border: none;
+    border-top-right-radius:8px ;
+    margin-top:8px ;
+    margin-bottom: 27px;
+}
+
+.company-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.company-contact{
+    height: 168px;
+    width:290px ;
 }
