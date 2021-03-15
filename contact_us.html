@@ -108,28 +108,33 @@
                     <div class="starred">* השדות המסומנים בכוכבית (*) הינם שדות חובה</div>
                 </div>
 
-                <form class="send-form" action="">
+                <form class="send-form" id="contact-us" action="">
 
                     <div class="input-elment">
                         <label for="name">*שם פרטי</label>
-                        <input type="text" id="name" for="name" required>
+                        <input type="text" id="name" for="name">
+                        <div class="error">שדה חובה</div>
                     </div>
+                    <div class="error">שדה חובה</div>
                     <div class="input-elment">
                         <label for="last-name">*שם משפחה </label>
-                        <input type="text" id="last-name" for="last-name" required>
+                        <input type="text" id="last-name" for="last-name">
                     </div>
+                    <div class="error">שדה חובה</div>
                     <div class="input-elment">
                         <label for="phone">*טלפון</label>
-                        <input type="text" id="phone" for="phone" required>
+                        <input type="text" id="phone" for="phone">
                     </div>
+                    <div class="error">שדה חובה</div>
                     <div class="input-elment">
                         <label for="email">*E-mail</label>
-                        <input type="email" id="email" for="email" requird>
+                        <input type="email" id="email" for="email">
                     </div>
+                    <div class="error">שדה חובה</div>
                     <div>
                         <textarea name="" id="" cols="30" rows="10" placeholder="תוכן הפניה"></textarea>
                     </div>
-                    <div class="btn-submit">שלח</div>
+                    <button type="button" class="btn-submit" onclick="checkInputValidety()">שלח</button>
 
                 </form>
             </div>
@@ -176,5 +181,6 @@
     </footer>
 
 </body>
+<!-- <script src="script.js"></script> -->
 
 </html>
