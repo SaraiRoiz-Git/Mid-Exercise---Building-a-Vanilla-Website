@@ -382,6 +382,7 @@ textarea{
 }
 .input-elment{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin:4px 0;
@@ -393,15 +394,16 @@ textarea{
     text-align: center;
     width:42px;
     height: 19px;
-    background: #15a8ff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #15a8ff 0%, #04528a 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #15a8ff 0%,#04528a 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #15a8ff 0%,#04528a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15a8ff', endColorstr='#04528a',GradientType=0 ); /* IE6-9 */
     border: none;
     border-top-right-radius:8px ;
     margin-top:8px ;
     margin-bottom: 27px;
+}
+
+button:hover{
+
 }
 
 .company-side{
@@ -429,6 +431,6 @@ textarea{
     font-size: 12px;
 }
 
-.form-submitted  input:invalid{
-    border: red solid;
+.form-submitted input:invalid + .error {
+   display: block;
 }
