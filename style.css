@@ -415,7 +415,6 @@ textarea{
 } 
 
 .btn-submit:hover{
-    border: none;
     background: #f9e531; /* Old browsers */
     background: linear-gradient(to bottom,  #f9e531 30%,#e8720b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e531', endColorstr='#e8720b',GradientType=0 ); /* IE6-9 */
