@@ -4,23 +4,18 @@ function checkInputValidety() {
     document.getElementById('contact-us').classList.add('form-submitted');
 }
 
-// var bunner1 = { title: 'yellow click&pick', src: 'images/ez.jpg' };
-// var bunner2 = { title: 'שטחי מסחר פז סנטר', src: 'images/paz_250x110103131473.jpg' };
-// var bunner3 = { title: 'טיפז', src: 'images/tip.jpg' };
-// var bunnersList = [bunner1, bunner2, bunner3];
-// function changeBunner() {
-//     var title = document.querySelector('header-bunner');
-//     var image = document.querySelector('image-bunner');
-//     var currBunner;
-//     while (true) {
-//         setInterval(() => {
-//             currBunner = bunnersList.pop;
-//             title.innerHTML = currBunner.innerHTML;
-//             image.src = currBunner.src;
-//             bunnersList.push(changeBunner);
-//         }, 5000);
-//     }
-// }
+let bunner1 = { title: 'טיפז', src: 'images/tip.jpg' };
+let bunner2 = { title: 'yellow click&pick', src: 'images/ez.jpg' };
+let bunner3 = { title: 'שטחי מסחר פז סנטר', src: 'images/paz_250x110103131473.jpg' };
+let bunnersList = [bunner1, bunner2, bunner3];
+let counter = 0;
 
-// changeBunner()
+function changeBunner() {
 
+    document.querySelector('#header-bunner').innerHTML = bunnersList[counter].title;
+    document.querySelector('#image-bunner').src = bunnersList[counter].src;
+    bunnersList.push(changeBunner);
+    counter = (counter + 1) % 3;
+}
+
+setInterval(changeBunner, 2000);
