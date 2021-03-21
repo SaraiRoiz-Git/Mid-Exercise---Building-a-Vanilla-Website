@@ -14,8 +14,7 @@ function changeBunner() {
 
     document.querySelector('#header-bunner').innerHTML = bunnersList[counter].title;
     document.querySelector('#image-bunner').src = bunnersList[counter].src;
-    bunnersList.push(changeBunner);
-    counter = (counter + 1) % 3;
+    counter = (counter + 1) % bunnersList.length;
 }
 
 setInterval(changeBunner, 2000);
